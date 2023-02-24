@@ -25,7 +25,7 @@ def run():
                 for k, v, in address_book.items():
                     entry_length = len(k) + len(v) + 7
                     if entry_length > max_length:
-                        max_length = len(k) + len(v) + 7
+                        max_length = entry_length
                 print("\n")
                 print("#"*max_length)
                 for k, v in address_book.items():
